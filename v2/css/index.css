@@ -1,0 +1,201 @@
+/*Global*/
+body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D6D8FF !important;
+    padding-left: 241px;
+    padding-right: 241px;
+}
+
+/*Typography*/
+p {
+    margin-top: 36px;
+    margin-bottom: 24px;
+    margin-left: 4px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #3138B1;
+}
+
+h3 {
+    font-size: 14px;
+    color: #0C1E34;
+}
+
+/*Top Navigation*/
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+}
+
+#logo {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    width: 25%;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+#navigation a{
+    text-decoration: none;
+    margin-left: 26px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+a:hover:not(.active) {
+    color: #45DCEA;
+}
+
+.active {
+    color: #FF0BC2;
+    font-weight: 600;
+    position: relative;
+}
+
+.active::after {
+    content: '';
+    height: 4px;
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    display: block;
+    background: #FF0BC2;
+    position: absolute;
+    margin-top: 8px;
+}
+
+/*.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 5%;
+}*/
+
+/*Main content*/
+#heroSection {
+    width: 100%;
+    display: grid;
+    min-height: 768px;
+    height: 70vh;
+    grid-template-rows: 100%;
+    grid-template-columns: 344px 560px 427px;
+    grid-template-areas:
+    "column1Grid column2Grid column3Grid";
+}
+
+#column1Grid {
+    grid-area: column1Grid;
+    width: 344px;
+    margin-top: 258px;
+    min-height: 312px;
+    height: 30vh;
+    display: grid;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "hiBlurb hiBlurb"
+        "resumeDocx resumePdf";
+    }
+#hiBlurb {
+    grid-area: hiBlurb;
+}
+#resumeDocx {
+    grid-area: resumeDocx;
+}
+#resumePdf {
+    grid-area: resumePdf;
+    margin-left: 10px;
+}
+button {
+    background-color: white;
+    border: 1px solid #FF0BC2;
+    width: 153px;
+    height: 44px;
+    border-radius: 44px;
+    box-shadow: 4px 4px #FF0BC2;
+    color: #FF0BC2;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+button:hover {
+    border: 1px solid #45DCEA;
+    box-shadow: 4px 4px #45DCEA;
+    color: #45DCEA;
+}
+
+#column2Grid {
+    grid-area: column2Grid;
+    width: 560px;
+    margin-top: 120px;
+    min-height: 560px;
+    height: 50vh;
+}
+
+#column3Grid {
+    grid-area: column3Grid;
+    margin-top: 32px;
+    width: 427px;
+    min-height: 736px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "project1"
+        "project2"
+        "project3";
+}
+#project1 {
+    grid-area: project1;
+    justify-content: left;
+}
+#project2 {
+    grid-area: project2;
+    justify-content: right;
+}
+#project3 {
+    grid-area: project3;
+    justify-content: left;
+}
+
+/*
+.left {
+    float: left;
+    width: 344px;
+    margin-top: 258px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: column;
+}
+*/
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 241px 64px;
+}

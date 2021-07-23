@@ -60,14 +60,17 @@ li a {
 li a:hover:not(.active) {
     color: #45DCEA;
 }
-  
+
+.active {
+    position: relative;
+}
+
 .active a{
     color: #FF0BC2;
     font-weight: 600;
 }
 
-.active::after 
-  {
+.active::after {
     content: '';
     height: 4px;
     text-align: center;
@@ -75,6 +78,7 @@ li a:hover:not(.active) {
     border-radius: 4px;
     display: block;
     background: #FF0BC2;
+    position: absolute;
     bottom: 0;
     left: 0;
 }
