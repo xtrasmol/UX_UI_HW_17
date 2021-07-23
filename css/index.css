@@ -6,14 +6,21 @@ body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: #D6D8FF !important;
+    padding-left: 241px;
+    padding-right: 241px;
 }
 
-p{
+p {
     margin-top: 36px;
     margin-bottom: 24px;
     line-height: 24px;
     font-size: 16px;
     color: #3138B1;
+}
+
+h3 {
+    font-size: 14px;
+    color: #0C1E34;
 }
 
 /*Nav bar*/
@@ -23,7 +30,6 @@ p{
 
 .logo {
     float: left;
-    margin-left: 241px;
     margin-top: 64px;
     padding: 0;
     overflow: hidden;
@@ -32,7 +38,6 @@ p{
 nav {
     float: right;
     list-style-type: none;
-    margin-right: 241px;
     margin-top: 64px;
     padding: 0;
     overflow: hidden;
@@ -46,7 +51,7 @@ li a {
     display: block;
     color: 3138B1;
     text-align: center;
-    padding: 14px 16px;
+    padding: 8px 13px;
     text-decoration: none;
     color: #3138B1;
     transition-duration: 0.4s;
@@ -56,19 +61,23 @@ li a:hover:not(.active) {
     color: #45DCEA;
 }
   
-.active {
+.active a{
     color: #FF0BC2;
-    font-weight: bold;
+    font-weight: 600;
 }
-  
-  .underline span::after
+
+.active::after 
   {
     content: '';
     height: 4px;
-    background: #FF0BC2;
+    text-align: center;
+    width: 55px;
     border-radius: 4px;
     display: block;
-  }
+    background: #FF0BC2;
+    bottom: 0;
+    left: 0;
+}
 
 /*Content*/
 button {
@@ -95,6 +104,7 @@ button:hover {
     color: #45DCEA;
 }
 
+/*
 .left {
     float: left;
     width: 344px;
@@ -108,10 +118,12 @@ button:hover {
 }
 
 .right {
-    float: right;
-    width: 655px;
-    margin-top: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-direction: column;
 }
+*/
 
 /*Footer*/
 footer {
