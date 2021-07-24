@@ -14,7 +14,6 @@ p {
     font-size: 16px;
     color: #3138B1;
 }
-
 h3 {
     font-size: 14px;
     color: #0C1E34;
@@ -26,14 +25,12 @@ h3 {
     flex-direction: row;
     margin: 64px 12% 0;
 }
-
 #logo {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
     width: 25%;
 }
-
 #navigation {
     display: flex;
     align-items: center;
@@ -47,8 +44,7 @@ h3 {
     cursor: pointer;
     transition-duration: 0.4s;
 }
-
-a:hover:not(.active) {
+#navigation a:hover {
     color: #45DCEA;
 }
 
@@ -57,7 +53,6 @@ a:hover:not(.active) {
     font-weight: 600;
     position: relative;
 }
-
 .active::after {
     content: '';
     height: 4px;
@@ -177,6 +172,16 @@ button:hover {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    cursor: pointer;
+}
+#project1Image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-image: url("../images/home_ClimbZen.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #project2 {
     grid-area: project2;
@@ -184,6 +189,21 @@ button:hover {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    cursor: pointer;
+}
+#project2Image {
+    height: 328px;
+    width: 328px;
+    border-radius: 50%;
+    background-image: url("../images/home_USDA.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 0.4s;
+}
+#project2Image:hover {
+    /* background: linear-gradient(to top, #45dceaec, #3137b1ec), url("../images/home_USDA.png"); */
+    background-image: url("../images/home_USDA_hover.png");
 }
 #project3 {
     grid-area: project3;
@@ -191,6 +211,16 @@ button:hover {
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
+    cursor: pointer;
+}
+#project3Image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-image: url("../images/home_Gulli.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .column3area {
     display: flex;
