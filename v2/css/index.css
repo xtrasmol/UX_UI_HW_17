@@ -3,7 +3,6 @@ body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: #D6D8FF !important;
-    padding: 0 241px 0 241px;
 }
 
 /*Typography*/
@@ -25,7 +24,7 @@ h3 {
 #navBar {
     display: flex;
     flex-direction: row;
-    margin-top: 64px;
+    margin: 64px 12% 0;
 }
 
 #logo {
@@ -68,7 +67,7 @@ a:hover:not(.active) {
     display: block;
     background: #FF0BC2;
     position: absolute;
-    margin-top: 8px;
+    margin-top: 14px;
 }
 
 /*.icons {
@@ -80,25 +79,25 @@ a:hover:not(.active) {
 
 /*Main content*/
 #heroSection {
-    max-width: 1438px;
     display: grid;
+    width: 76%;
     min-height: 768px;
     height: 70vh;
+    margin: 0px 12%;
     grid-template-rows: 100%;
-    grid-template-columns: 344px 560px 427px;
+    grid-template-columns: 28% 44% 28%;
     grid-template-areas:
     "column1Grid column2Grid column3Grid";
-    border: 1px solid red;
 }
-
 .heroSectionArea {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 #column1Grid {
     grid-area: column1Grid;
-    width: 344px;
+    width: 85%;
     margin-top: 258px;
     min-height: 312px;
     height: 30vh;
@@ -117,7 +116,7 @@ a:hover:not(.active) {
 }
 #resumePdf {
     grid-area: resumePdf;
-    margin-left: 10px;
+    margin-left: 5%;
 }
 button {
     background-color: white;
@@ -148,26 +147,23 @@ button:hover {
 
 #column2Grid {
     grid-area: column2Grid;
-    width: 560px;
+    width: 100%;
     margin-top: 120px;
-    min-height: 560px;
-    height: 50vh;
-}
-
-.column2area {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+.column2area {
+    display: flex;
     justify-content: center;
 }
 
 #column3Grid {
     grid-area: column3Grid;
     margin-top: 32px;
-    width: 427px;
+    width: 100%;
     min-height: 736px;
-    height: 70vh;
     display: grid;
-    border: 1px solid red;
     grid-template-rows: 25% 50% 25%;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -180,49 +176,26 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-content: flex-start;
+    align-items: flex-start;
 }
 #project2 {
     grid-area: project2;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-content: center;
-    border: 1px solid black;
+    align-items: center;
 }
 #project3 {
     grid-area: project3;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-content: flex-end;
+    align-items: flex-end;
 }
 .column3area {
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
 }
-
-/*
-.left {
-    float: left;
-    width: 344px;
-    margin-top: 258px;
-}
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.right {
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    flex-direction: column;
-}
-*/
 
 /*Footer*/
 footer {
@@ -230,5 +203,5 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 7px;
+    margin: 7px 12% 0;
 }
