@@ -3,8 +3,7 @@ body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: #D6D8FF !important;
-    padding-left: 241px;
-    padding-right: 241px;
+    padding: 0 241px 0 241px;
 }
 
 /*Typography*/
@@ -81,7 +80,7 @@ a:hover:not(.active) {
 
 /*Main content*/
 #heroSection {
-    width: 100%;
+    max-width: 1438px;
     display: grid;
     min-height: 768px;
     height: 70vh;
@@ -89,6 +88,12 @@ a:hover:not(.active) {
     grid-template-columns: 344px 560px 427px;
     grid-template-areas:
     "column1Grid column2Grid column3Grid";
+    border: 1px solid red;
+}
+
+.heroSectionArea {
+    display: flex;
+    flex-direction: row;
 }
 
 #column1Grid {
@@ -135,6 +140,11 @@ button:hover {
     box-shadow: 4px 4px #45DCEA;
     color: #45DCEA;
 }
+.column1Area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 #column2Grid {
     grid-area: column2Grid;
@@ -144,6 +154,12 @@ button:hover {
     height: 50vh;
 }
 
+.column2area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #column3Grid {
     grid-area: column3Grid;
     margin-top: 32px;
@@ -151,6 +167,7 @@ button:hover {
     min-height: 736px;
     height: 70vh;
     display: grid;
+    border: 1px solid red;
     grid-template-rows: 25% 50% 25%;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -160,15 +177,30 @@ button:hover {
 }
 #project1 {
     grid-area: project1;
-    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 #project2 {
     grid-area: project2;
-    justify-content: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    border: 1px solid black;
 }
 #project3 {
     grid-area: project3;
-    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-end;
+}
+.column3area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 /*
@@ -195,7 +227,8 @@ button:hover {
 /*Footer*/
 footer {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 241px 64px;
+    margin-top: 7px;
 }
